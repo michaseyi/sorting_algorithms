@@ -12,4 +12,5 @@ void ShellSort(int [], int);
 void CocktailShakerSort(int [], int);
 void CountingSort(int [], int);
 void HeapSort(int [], int);
+void RadixSort(int [], int);
 #endif

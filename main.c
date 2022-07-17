@@ -14,7 +14,7 @@ int main()
    int *list = malloc(sizeof(int) * len);
 
    for (int i = 0; i < len; i++)
-      listnum[i] = rand() % 10;
+      listnum[i] = rand() % 100;
 
    // memcpy(list, listnum, sizeof(int) * len);
    // start = time(NULL);
@@ -25,7 +25,21 @@ int main()
    // memcpy(list, listnum, sizeof(int) * len);
    // start = time(NULL);
    // InsertionSort(list, len);
-   // end = time(NULL) - start;
+   // end = time(NULL) - start;void print_list(const listint_t *list)
+// {
+//     int i;
+
+//     i = 0;
+//     while (list)
+//     {
+//         if (i > 0)
+//             printf(", ");
+//         printf("%d", list->n);
+//         ++i;
+//         list = list->next;
+//     }
+//     printf("\n");
+// }
    // printf("InsertionSort %lds\n", end);
 
    // memcpy(list, listnum, sizeof(int) * len);
@@ -43,10 +57,10 @@ int main()
    // print_list(list, );
    print_list(list, len);
    start = time(NULL);
-   HeapSort(list, len);
+   RadixSort(list, len);
    end = time(NULL) - start;
    print_list(list, len);
-   printf("HeapSort %lds\n", end);
+   printf("RadixSort %lds\n", end);
 
    // memcpy(list, listnum, sizeof(int) * len);
    // start = time(NULL);
