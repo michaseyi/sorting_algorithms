@@ -38,4 +38,6 @@ void counting_sort(int *array, size_t size)
 		result[--pos] = array[i];
 	}
 	memcpy(array, result, size * sizeof(int));
+	free(k);
+	free(result);
 }
