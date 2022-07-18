@@ -13,7 +13,7 @@
  */
 
 void merge(int first[], int first_len, int second[], int second_len,
-int *merged_list)
+			  int *merged_list)
 {
 	int *first_ptr = first, *second_ptr = second, size = first_len + second_len;
 	int f = 0, s = 0, i = 0;
@@ -72,9 +72,13 @@ void _merge_sort(int *array, size_t size, int *merged_list)
 
 void merge_sort(int *array, size_t size)
 {
-	int *merged_list = malloc(sizeof(int) * size);
 
-	if (array == NULL || size < 2 || merged_list == NULL)
+	int *merged_list;
+	
+	if (array == NULL || size < 2)
+		return;
+	merged_list = malloc(sizeof(int) * size);
+	if (merged_list == NULL)
 		return;
 	_merge_sort(array, size, merged_list);
 	free(merged_list);
