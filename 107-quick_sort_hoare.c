@@ -26,22 +26,27 @@ void swap(int *array, int first, int second)
  */
 
 int HoarePartitionScheme(int *origlist, int origlist_size, int *list,
-int len, int pivot)
+								 int len, int pivot)
 {
-	int start = -1, end = len, target = list[pivot];
+	int start = 0, end = len - 1, target = list[pivot], swapped = 0;
 
 	while (start < end)
 	{
-		do {
+		if (swapped)
+		{
 			start++;
-		} while (list[start] < target);
-		do {
 			end--;
-		} while (list[end] > target);
+			swapped = 0;
+		}
+		while (list[start] < target)
+			start++;
+		while (list[end] > target)
+			end--;
 		if (start < end)
 		{
 			swap(list, start, end);
 			print_array(origlist, origlist_size);
+			swapped = 1;
 		}
 	}
 	return (start);
