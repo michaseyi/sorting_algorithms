@@ -13,4 +13,5 @@
 | Merge sort                                                                             | O(log(n))                  | O(nlog(n))                | O(nlog(n))                |
 | Heap sort                                                                              | O(nlog(n))                 | O(nlog(n))                | O(nlog(n))                |
 | Radix sort. `d` is the length of the maximum number                                    | O(d\*n)                    | O(d\*n)                   | O(d\*n)                   |
+| Bitonic sort                                                                           |                            |                           |                           |
 | Quick sort using `hoare` partition                                                     | O(n^2)                     | O(nlog(n))                | O(nlog(n))                |
