@@ -1,8 +1,0 @@
-{
-	"files.associations": {
-		"*.ejs": "html",
-		"*.js": "javascript",
-		"sorting.h": "c",
-		"stdio.h": "c"
-	}
-}
