@@ -28,7 +28,7 @@ int get_value(const char *value)
 	}
 }
 /**
- * less - compares to deck_node_t nodes
+ * less - compares two deck_node_t nodes
  * @first: first node
  * @second: second node
  * Return: 1 if first < second else 0
