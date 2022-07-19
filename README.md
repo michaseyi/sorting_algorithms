@@ -2,7 +2,7 @@
 
 ---
 
-| Sorting Algorithm                                                                      | Worst Case Time Complexity | Best Case Time Complexity | Best Case Time Complexity |
+| Sorting Algorithm                                                                      | Worst Case Time Complexity | Average Case Time Complexity | Best Case Time Complexity |
 | -------------------------------------------------------------------------------------- | -------------------------- | ------------------------- | ------------------------- |
 | Bubble sort                                                                            | O(n^2)                     | O(n^2)                    | O(n)                      |
 | Insertion sort                                                                         | O(n^2)                     | O(n^2)                    | O(n)                      |
